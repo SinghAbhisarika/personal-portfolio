@@ -1,0 +1,23 @@
+.footer{
+    width: 100%;
+    color: #fff;
+    min-height: 100px;
+    position: relative;
+    bottom: 0;
+    background: #21262c;
+    margin-bottom: 0px;
+    /* position: absolute; */
+}
+.footer .first,.second,.third{
+    width: 300px;
+}
+
+.linkedin{
+    color: white;
+    font-size: small;
+    text-decoration: none;    
+}
+.resume{
+    color: white;
+    text-decoration: none;    
+}

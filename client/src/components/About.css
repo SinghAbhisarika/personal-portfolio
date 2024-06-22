@@ -1,0 +1,107 @@
+
+.about_container {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+   
+  .hello, .hello1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .del desc{
+    margin-left: 50px;
+  }
+   
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+   
+  .left_container, .right_container {
+    flex: 1;
+    margin: 10px;
+    min-width: 280px; /* Minimum width to avoid too narrow content */
+    max-width: 45%; /* Ensures containers do not exceed 45% of parent width */
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+  }
+   
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+   
+  .deloitte {
+    font-size: 20px;
+    font-weight: bold;
+  }
+   
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+   
+  strong, em {
+    display: inline-block;
+    margin-right: 10px;
+  }
+   
+  /* Responsive Styles */
+  @media (max-width: 1024px) { /* Tablet and below */
+    .left_container, .right_container {
+      flex: 1;
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  }
+   
+  @media (max-width: 768px) { /* Tablets and large phones */
+    .hello, .hello1 {
+      font-size: 20px;
+    }
+   
+    .desc, .graduation, .senior-secondary, .matriculation {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+   
+  @media (max-width: 480px) { /* Mobile */
+    .hello, .hello1 {
+      font-size: 18px;
+    }
+   
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+   
+    .deloitte {
+      font-size: 18px;
+    }
+    
+    .desc, .graduation, .senior-secondary, .matriculation {
+      font-size: 12px;
+      padding: 6px;
+    }
+   
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+   
+    .left_container, .right_container {
+      max-width: 100%; /* Full width on mobile */
+    }
+  }
+  
